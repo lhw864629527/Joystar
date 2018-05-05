@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/qzonesendnews_item_img"
+                android:src="@mipmap/homeimg"
+                android:scaleType="centerCrop"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/qzonesendnews_item_dete"
+                android:src="@mipmap/dele_icon"
+                android:layout_alignParentRight="true"
+                android:scaleType="centerCrop"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                />
+
+
+        </RelativeLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:id="@+id/qzonesendnews_item_edt"
+            android:hint="@string/Say_something"
+            android:textColorHint="@color/color_Gray"
+            android:textSize="15dp"
+            android:textColor="@color/color_Blackfont"
+            android:gravity="start"
+            android:padding="10dp"
+            android:background="@drawable/bg_white"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

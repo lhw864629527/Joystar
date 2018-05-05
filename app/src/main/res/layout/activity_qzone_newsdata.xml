@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_qzone_newsdata"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_white"
+    android:orientation="vertical"
+    tools:context="com.erbao.joystar.moudule.qzone.activity.QzoneNewsdataActivity">
+
+    <include layout="@layout/handview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></include>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_marginTop="@dimen/handview_size"
+        android:id="@+id/views"
+        android:background="@color/color_Gray"></View>
+
+
+    <ListView
+        android:layout_below="@id/views"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:id="@+id/qzone_news_listv"
+        >
+
+    </ListView>
+
+</RelativeLayout>

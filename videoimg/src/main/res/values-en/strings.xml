@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">VideoImg</string>
+    <string name="video_short">The video is too short.</string>
+    <string name="beautiful">Beauty</string>
+    <string name="Shearing_process">Shearing process</string>
+    <string name="video_5seconds">Video is less than 5 seconds long and cannot be uploaded.</string>
+    <string name="select_clip">Drag to select the clip you want to publish within 15 seconds.</string>
+    <string name="comple">confirm</string>
+    <string name="video_not_support">Video does not support.</string>
+    <string name="video_processing">Video processing.</string>
+    <string name="filter">Filter</string>
+    <string name="music">Music</string>
+    <string name="packup">Pack up</string>
+    <string name="voice">Voice</string>
+</resources>

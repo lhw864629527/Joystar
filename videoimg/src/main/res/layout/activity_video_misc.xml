@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_video_misc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.erbao.videoimg.activity.VideoMiscActivity">
+
+
+    <com.erbao.videoimg.views.VideoPreviewView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/video_filesmuis_back"
+                android:src="@mipmap/back_writh" />
+
+            <TextView
+                android:id="@+id/video_filesmuis_cmple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/bg_edittext_normalss"
+                android:paddingBottom="5dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="5dp"
+                android:text="@string/comple"
+                android:textColor="@color/colorWhite"
+                android:textSize="15dp"
+                android:layout_alignBottom="@+id/video_filesmuis_back"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/video_filesmuis_rela"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorBlack">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/video_filesmuis_lin1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/vide_msiu_img"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/video_filesmuis_beaty"
+                        android:src="@drawable/selector_beauty" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/beautiful"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/vide_msiu_img"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/video_filesmuis_filter"
+                        android:src="@mipmap/filter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/filter"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/vide_msiu_img"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/video_filesmuis_muisc"
+                        android:src="@mipmap/music" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/music"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="gone"
+                android:id="@+id/video_filesmuis_lin2"
+                android:orientation="vertical">
+
+                <com.erbao.videoimg.views.HorizontalListView
+                    android:id="@+id/video_filesmuis_listv"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                </com.erbao.videoimg.views.HorizontalListView>
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:text="@string/packup"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/video_filesmuis_closefilter"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorWhite"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/video_filesmuis_lin3"
+                android:orientation="vertical"
+                android:gravity="center"
+               android:visibility="gone"
+                >
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/voice"
+                        android:textColor="@color/colorWhite" />
+
+                    <SeekBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/video_filesmuis_videseek"
+                        android:max="10"
+                        android:progress="10"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/music"
+                        android:textColor="@color/colorWhite" />
+
+                    <SeekBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/video_filesmuis_muiscseek"
+                        android:max="10"
+                        android:progress="10" />
+
+
+                </LinearLayout>
+
+
+                <com.erbao.videoimg.views.HorizontalListView
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/video_filesmuis_muisclistv"
+                    android:layout_height="60dp">
+
+                </com.erbao.videoimg.views.HorizontalListView>
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:text="@string/packup"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/video_filesmuis_closemuis"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorWhite"
+                    />
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

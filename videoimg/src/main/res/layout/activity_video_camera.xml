@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_video_camera"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.erbao.videoimg.activity.VideoCameraActivity">
+
+
+    <com.erbao.videoimg.views.CameraView
+        android:id="@+id/video_camera_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/video_camera_back"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:src="@mipmap/back_writh" />
+
+            <ImageView
+                android:id="@+id/video_camera_came"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/selector_rewardcamera" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/video_camera_linbg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorBlack"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"></View>
+
+            <LinearLayout
+                android:id="@+id/video_camera_lin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/beautiful"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15dp" />
+
+                <SeekBar
+                    android:id="@+id/video_camera_seek"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="6"
+                    android:progress="1" />
+
+            </LinearLayout>
+
+
+            <com.erbao.videoimg.views.HorizontalListView
+                android:id="@+id/video_camera_listv"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"></com.erbao.videoimg.views.HorizontalListView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"></View>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/video_camera_beauty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:src="@mipmap/beauty_off" />
+
+
+                <com.erbao.videoimg.views.CircularProgressView
+                    android:id="@+id/video_camera_capyure"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/bt_capture"
+                    android:clickable="true" />
+
+
+                <ImageView
+                    android:id="@+id/video_camera_filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:src="@mipmap/filter" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <com.erbao.videoimg.views.FocusImageView
+            android:id="@+id/video_camera_focus"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:visibility="invisible"
+            app:focus_fail_id="@mipmap/focus_focus_failed"
+            app:focus_focusing_id="@mipmap/focus_focusing"
+            app:focus_success_id="@mipmap/focus_focused" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

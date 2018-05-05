@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/setupbg"
+    android:orientation="vertical"
+    tools:context="com.erbao.joystar.moudule.home.activity.SetupActivity">
+
+    <include layout="@layout/handview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></include>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/toumingw"
+        android:orientation="vertical"
+        android:paddingLeft="15dp">
+
+        <TextView
+            android:id="@+id/setup_language"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lin_size"
+            android:gravity="center_vertical"
+            android:text="@string/language"
+            android:textColor="@color/color_Blackfont"
+            android:textSize="15dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/color_Gray"></View>
+
+        <TextView
+            android:id="@+id/setup_modifiypassword"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lin_size"
+            android:gravity="center_vertical"
+            android:text="@string/modifiypassword"
+            android:textColor="@color/color_Blackfont"
+            android:textSize="15dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:id="@+id/setup_modifiypassword_view"
+            android:background="@color/color_Gray"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lin_size"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/lin_size"
+                android:gravity="center_vertical"
+                android:text="@string/cache"
+                android:textColor="@color/color_Blackfont"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:gravity="center|end"
+                android:text="23M"
+                android:textColor="@color/color_Gray"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/color_Gray"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lin_size"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/lin_size"
+                android:gravity="center_vertical"
+                android:text="@string/version"
+                android:textColor="@color/color_Blackfont"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:gravity="center|end"
+                android:text="V 1.0.0"
+                android:textColor="@color/color_Gray"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/setup_logout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lin_size"
+        android:layout_marginTop="60dp"
+        android:background="@mipmap/toumingw"
+        android:gravity="center"
+        android:text="@string/logout"
+        android:textColor="@color/color_Blackfont"
+        android:textSize="15dp" />
+
+
+</LinearLayout>

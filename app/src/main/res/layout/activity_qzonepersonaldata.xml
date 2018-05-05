@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_qzonepersonaldata"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/setupbg"
+    android:orientation="vertical"
+    tools:context="com.erbao.joystar.moudule.qzone.activity.QzonePersonaldataActivity">
+
+    <include
+        layout="@layout/handview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></include>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/bg_white"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:text="@string/nickname"
+                    android:id="@+id/QzonePdata_nickname"
+                    android:textColor="@color/color_Blackfont"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/name"
+                    android:textColor="@color/color_Gray3"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/name"
+                    android:id="@+id/QzonePdata_name"
+                    android:textColor="@color/color_Gray3"
+                    android:textSize="15dp" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/QzonePdata_img"
+                    android:src="@mipmap/circle_bg_img" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lin_size"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/toumingw"
+            android:text="@string/unsubscribe"
+            android:id="@+id/QzonePdata_unsubs"
+            android:gravity="center"
+            android:textColor="@color/color_White"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lin_size"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@mipmap/toumingw"
+            android:text="@string/share_information"
+            android:id="@+id/QzonePdata_people"
+            android:gravity="center"
+            android:textColor="@color/color_White"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lin_size"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@mipmap/toumingw"
+            android:text="@string/Share_thegallery"
+            android:gravity="center"
+            android:id="@+id/QzonePdata_gallery"
+            android:textColor="@color/color_White"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lin_size"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@mipmap/toumingw"
+            android:text="@string/Sharing_about"
+            android:id="@+id/QzonePdata_about"
+            android:gravity="center"
+            android:textColor="@color/color_White"
+            android:textSize="15dp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

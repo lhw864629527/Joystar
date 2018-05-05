@@ -1,0 +1,18 @@
+主項目的buildgredle 添加   maven { url 'https://jitpack.io' }   如下图：
+allprojects {
+    repositories {
+        jcenter()
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+
+    //--------------初始化videoimg------------------
+String path = Environment.getExternalStorageDirectory().toString() + "/videoimg/";//项目文件夹
+ VideoimgInitialize.initialize(this,path);
+//设置语言 true:cn    false:en    默认true
+        FilterMuisc.Language(true);
+        //--------------初始化videoimg------------------
+
+
+

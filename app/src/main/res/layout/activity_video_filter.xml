@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_video_filter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.erbao.joystar.moudule.qzone.activity.VideoFilterActivity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/rlGlViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <include
+        layout="@layout/handview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></include>
+
+
+
+    <LinearLayout
+        android:id="@+id/videfilter_lin"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_white"
+        android:orientation="horizontal">
+
+        <com.erbao.joystar.views.HorizontalListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:id="@+id/videfilter_listv"
+            ></com.erbao.joystar.views.HorizontalListView>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_image_filter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.erbao.videoimg.activity.ImageFilterActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imgfilter_img"
+                        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgfilter_back"
+            android:src="@mipmap/back_writh" />
+
+        <TextView
+            android:id="@+id/imgfilter_comple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/bg_edittext_normalss"
+            android:paddingBottom="5dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="5dp"
+            android:text="@string/comple"
+            android:textColor="@color/colorWhite"
+            android:textSize="15dp"
+            android:layout_alignBottom="@+id/video_filesmuis_back"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/imgfilter_lin"
+        android:background="@color/colorBlack"
+        >
+        <com.erbao.videoimg.views.HorizontalListView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/imgfilter_listv"
+            >
+
+        </com.erbao.videoimg.views.HorizontalListView>
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

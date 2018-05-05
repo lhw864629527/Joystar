@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">VideoImg</string>
+    <string name="video_short">录像时间太短</string>
+    <string name="beautiful">美颜</string>
+    <string name="Shearing_process">剪切处理中</string>
+    <string name="video_5seconds">视频长不足5秒,无法上传</string>
+    <string name="select_clip">拖动选择你要发表的15秒以内片段</string>
+    <string name="comple">确定</string>
+    <string name="video_not_support">视频不支持</string>
+    <string name="video_processing">视频处理中</string>
+    <string name="filter">滤镜</string>
+    <string name="music">音乐</string>
+    <string name="packup">收起</string>
+    <string name="voice">声音</string>
+</resources>
